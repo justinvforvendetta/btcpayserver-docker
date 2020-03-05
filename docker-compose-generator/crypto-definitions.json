@@ -70,6 +70,13 @@
     "EclairFragment": null
   },
   {
+    "Crypto": "xvg",
+    "CryptoFragment": "verge",
+    "CLightningFragment": null,
+    "LNDFragment": null,
+    "EclairFragment": null
+  },
+  {
     "Crypto": "xmr",
     "CryptoFragment": "monero",
     "CLightningFragment": null,

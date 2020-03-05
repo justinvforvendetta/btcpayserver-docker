@@ -754,6 +754,16 @@ cd "$(dirname $DOCKERFILE)"
 docker build -f "$DOCKERFILE" -t "chekaz/docker-trezarcoin:0.13.0" .
 cd - && cd ..
 
+# Build verge
+# https://raw.githubusercontent.com/vergecurrency/vDocker/master/Dockerfile
+DOCKERFILE="Dockerfile"
+echo "Building vergecurrency/vDocker"
+git clone https://github.com/vergecurrency/vDocker verge
+cd verge
+git checkout master
+cd "$(dirname $DOCKERFILE)"
+docker build -f "$DOCKERFILE" -t "vergecurrency/vDocker:6.0.2" .
+cd - && cd ..
 
 # Build docker-viacoin
 # https://raw.githubusercontent.com/viacoin/docker-viacoin/master/viacoin/0.15.2/docker-viacoin

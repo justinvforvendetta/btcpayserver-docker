@@ -1,0 +1,31 @@
+version: "3"
+
+services:
+  viacoind:
+      restart: unless-stopped
+      container_name: btcpayserver_verged
+      image: vergecurrency/vDocker:6.0.2
+      environment:
+        BITCOIN_EXTRA_ARGS: |
+          rpcport=20102
+          ${NBITCOIN_NETWORK:-regtest}=1
+          port=21102
+          whitelist=0.0.0.0/0
+      expose:
+        - "20102" #RPC
+        - "21102" #P2P
+      volumes:
+        - "verge_datadir:/data"
+  nbxplorer:
+      environment:
+        NBXPLORER_CHAINS: "xvg"
+        NBXPLORER_VIARPCURL: http://verged:20102/
+        NBXPLORER_VIANODEENDPOINT: verged:39388
+      volumes:
+        - "verge_datadir:/root/.verge"
+  btcpayserver:
+      environment:
+        BTCPAY_CHAINS: "xvg"
+        BTCPAY_VIAEXPLORERURL: http://nbxplorer:32838/
+volumes:
+  verge_datadir:

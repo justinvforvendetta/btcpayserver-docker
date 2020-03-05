@@ -21,6 +21,9 @@ services:
   litecoind:
     environment:
       BITCOIN_EXTRA_ARGS: prune=50000
+  verged:
+    environment:
+      BITCOIN_EXTRA_ARGS: prune=50000
   viacoind:
     environment:
       BITCOIN_EXTRA_ARGS: prune=50000

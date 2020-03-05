@@ -452,6 +452,11 @@ namespace DockerFileBuildHelper
                     dockerInfo.GitLink = "https://github.com/NicolasDorier/docker-bitcoin";
                     dockerInfo.GitRef = "master";
                     break;
+				case "docker-verge":
+                    dockerInfo.DockerFilePath = "Dockerfile";
+                    dockerInfo.GitLink = "https://github.com/vergecurrency/vDocker";
+                    dockerInfo.GitRef = "master";
+                    break;
                 case "docker-viacoin":
                     dockerInfo.DockerFilePath = $"viacoin/{image.Tag}/docker-viacoin";
                     dockerInfo.GitLink = "https://github.com/viacoin/docker-viacoin";

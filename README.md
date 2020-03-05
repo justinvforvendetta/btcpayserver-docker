@@ -357,6 +357,7 @@ We are trying to update our dependencies to run on `arm32v7` and `x64` boards. H
 | traefik | latest | [✔️](https://raw.githubusercontent.com/containous/traefik-library-image/master/scratch/Dockerfile) | ️❌ | ️❌ | [Github](https://github.com/containous/traefik-library-image) - [DockerHub](https://hub.docker.com/_/traefik) |
 | chekaz/docker-trezarcoin | 0.13.0 | [✔️](https://raw.githubusercontent.com/ChekaZ/docker/master/trezarcoin/1.2.0/Dockerfile) | ️❌ | ️❌ | [Github](https://github.com/ChekaZ/docker) - [DockerHub](https://hub.docker.com/r/chekaz/docker-trezarcoin) |
 | romanornr/docker-viacoin | 0.15.2 | [✔️](https://raw.githubusercontent.com/viacoin/docker-viacoin/master/viacoin/0.15.2/docker-viacoin) | ️❌ | ️❌ | [Github](https://github.com/viacoin/docker-viacoin) - [DockerHub](https://hub.docker.com/r/romanornr/docker-viacoin) |
+| vergecurrency/vDocker | 6.0.2 | [✔️](https://raw.githubusercontent.com/vergecurrency/vDocker/master/Dockerfile) | ️❌ | ️❌ | [Github](https://github.com/vergecurrency/vDocker) - [DockerHub](https://hub.docker.com/r/vergecurrency/verge) |
 
 # FAQ
 
